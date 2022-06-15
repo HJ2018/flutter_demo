@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/AppTool/Base/BaseWidget/BaseStateless.dart';
+import 'package:basewidget/BaseTool.dart';
 
-
+// ignore: camel_case_types, must_be_immutable
 class fourWidget extends BaseStateless {
 
 

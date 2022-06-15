@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/AppTool/Base/BaseTabBar/Config.dart';
+import 'package:basewidget/BaseTool.dart';
 import 'package:get/get.dart';
 
 import 'IndexState.dart';

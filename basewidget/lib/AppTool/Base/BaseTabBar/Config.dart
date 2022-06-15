@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 
-// ignore: camel_case_types
+// ignore: must_be_immutable, camel_case_types
 class appBarSetting{
 
-   String baseTitle = "";
+   final String baseTitle = "";
 
-   String rightImgPath = "";
+   final String rightImgPath = "";
 
-   double elevation = 0;
+   final double elevation = 0;
 
-   Color navBgColor = Colors.white;
+   final Brightness brightness =  Brightness.light;
 
-   Brightness brightness =  Brightness.light;
+   final String? rightText = "";
 
-   String? rightText = "";
+   final Color rightTextColor = Colors.white;
 
-   Color rightTextColor = Colors.white;
-
+   final Color navBgColor = Colors.white;
 
    PreferredSizeWidget? get bottom => null;
 
@@ -32,9 +31,14 @@ class appBarSetting{
 
 }
 
+
 class BarConfig{
 
-   late appBarSetting config;
+
+   Color navBgColor = Colors.white;
+
+
+   late BarConfig config;
 
    static BarConfig? _instance;
 
@@ -44,8 +48,7 @@ class BarConfig{
 
    BarConfig._internal() {
       ///初始化一些参数统一设置
-      config = appBarSetting();
-
+      config = BarConfig();
    }
 
 }

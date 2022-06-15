@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/AppTool/Tool/FlowWidget/FlowWidget.dart';
-
+import 'package:basewidget/BaseTool.dart';
+import 'package:basewidget/BaseTool.dart';
 class OneState {
 
 
@@ -28,8 +28,8 @@ class OneState {
 
     /// tabBar[title] name
     tabBarView =  [
-      FlowDemo(), Text("视频"),
-      Text("声音"),Text("图片"),Text("段子")
+      FlowDemo(), const Text("视频"),
+      const Text("声音"),const Text("图片"),const Text("段子")
     ];
 
   }

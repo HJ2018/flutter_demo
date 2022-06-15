@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import '../BaseTabBar/BaseAppBar.dart';
 import '../BaseTabBar/Config.dart';
 
-// ignore: must_be_immutable
-abstract class BaseStateless extends StatelessWidget  with appBarSetting{
+abstract class BaseStateless extends StatelessWidget with appBarSetting{
 
 
   final String? appTitle;
@@ -55,7 +54,7 @@ abstract class BaseStateless extends StatelessWidget  with appBarSetting{
         backCallBack: backCallBack,
 
         ///背景颜色
-        backgroundColor: ( navBgColor !=Colors.white)?navBgColor:BarConfig.instance.config.navBgColor,
+        backgroundColor: (navBgColor !=Colors.white)?navBgColor:BarConfig.instance.config.navBgColor,
 
         /// brightness
         brightness: brightness,
