@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:basewidget/BaseTool.dart';
+import 'package:get/get.dart';
 
+import 'Setting/setting_page/view.dart';
 class twoWidget extends BaseStateless {
 
 
@@ -10,7 +12,16 @@ class twoWidget extends BaseStateless {
   @override
   Widget initBody(BuildContext context) {
     // TODO: implement initBody
-    return const Text("data");
+    return InkWell(
+      onTap: (){
+
+        Get.to(() => SettingPageWidget());
+      },
+      child: const SizedBox(
+        width: 100,height: 100,
+        child: Text("data"),
+      ),
+    );
   }
 
 }

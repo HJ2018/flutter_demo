@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable, camel_case_types
 class appBarSetting{
 
+
+   /// 重写set方法设置属性
    final String baseTitle = "";
 
    final String rightImgPath = "";
@@ -28,27 +30,4 @@ class appBarSetting{
 
    List<Widget>? get rightActions => null;
 
-
 }
-
-
-// class BarConfig{
-//
-//
-//    Color navBgColor = Colors.white;
-//
-//
-//    late BarConfig config;
-//
-//    static BarConfig? _instance;
-//
-//    factory BarConfig() => instance;
-//
-//    static BarConfig get instance => _instance ??= BarConfig._internal();
-//
-//    BarConfig._internal() {
-//       ///初始化一些参数统一设置
-//       config = BarConfig();
-//    }
-//
-// }

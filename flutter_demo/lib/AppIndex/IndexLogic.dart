@@ -19,7 +19,7 @@ class NewPageLogic extends GetxController with GetSingleTickerProviderStateMixin
 
 
     /// 统一设置导航栏颜色
-    BarConfig.instance.config.navBgColor = Colors.red;
+    // BarConfig.instance.config.navBgColor = Colors.red;
   }
 
 

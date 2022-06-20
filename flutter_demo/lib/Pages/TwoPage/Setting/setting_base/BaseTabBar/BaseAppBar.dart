@@ -42,8 +42,7 @@ baseAppBar(
 
 
   /// backgroundColor
-  Color _color = Colors.white;
-  (backgroundColor == Colors.transparent ||
+  Color _color =(backgroundColor == Colors.transparent ||
       backgroundColor == Colors.white )
       ? Colors.black
       : Colors.white;

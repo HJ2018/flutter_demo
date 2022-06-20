@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 import 'AppMain.dart';
 
-class MyApp extends MaterialApp{
+class MyApp extends GetMaterialApp{
 
   const MyApp({Key? key}) : super(key: key);
 
