@@ -1,15 +1,15 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/AppIndex/IndexPage.dart';
+import 'package:flutter_demo/Pages/ThreePage/three.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 
 /// 进入APP
 Widget appHome(){
 
-  return indexWidget();
+  // return indexWidget();
+  return ThreeWidget();
 }
-
 
 
 /// TransitionBuilder Scaffold
@@ -27,6 +27,9 @@ Widget pluginBuilder(child){
     child:  child,
   );
 }
+
+
+
 
 
 

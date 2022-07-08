@@ -23,7 +23,7 @@ class IndexState {
   IndexState() {
     ///Initialize variables
 
-    listController = [twoWidget(), twoWidget(), threeWidget(), fourWidget(),];
+    listController = [twoWidget(), twoWidget(), ThreeWidget(), fourWidget(),];
 
     appBarList = const [
       {"title":"title1", "icon":Icon(Icons.home)},

@@ -11,8 +11,24 @@ dependencies:
     sdk: flutter
 
 
+
+
+
   basewidget:
     path: ../basewidget
+
+  ai_barcode: any
+
+  # Flutter Permission.
+  permission_handler: any
+
+  # message
+  ai_awesome_message: any
+
+  # design
+  air_design: any
+
+
 
 
 

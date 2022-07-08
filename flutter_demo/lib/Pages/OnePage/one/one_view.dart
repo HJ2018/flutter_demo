@@ -11,7 +11,7 @@ class OneWidget extends BaseStateless {
   final logic = Get.put(OneLogic());
   final state = Get.find<OneLogic>().state;
 
-   OneWidget({Key? key}) : super(key: key,appTitle: "title1单独改变导航栏颜色",isBack: false);
+   OneWidget({Key? key}) : super(key: key,appTitle: "二维码",isBack: false);
 
 
   /// 导航栏单独设置颜色

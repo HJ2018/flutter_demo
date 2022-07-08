@@ -1,9 +1,14 @@
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:basewidget/BaseTool.dart';
+import 'package:flutter_demo/Pages/ThreePage/select_scanner_style_page.dart';
 
-class threeWidget extends BaseStateless {
+import 'creator_page.dart';
 
-  threeWidget({Key? key}) : super(key: key,appTitle: "title3",isBack: true);
+class ThreeWidget extends BaseStateless {
+
+  ThreeWidget({Key? key}) : super(key: key,appTitle: "扫码二维码",isBack: true);
 
 
   @override
@@ -14,6 +19,57 @@ class threeWidget extends BaseStateless {
   @override
   Widget initBody(BuildContext context) {
     // TODO: implement initBody
-    return const Text("data");
+    return Center(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MaterialButton(
+                  onPressed: () {
+                    //跳转页面=扫描二维码
+                    // Airoute.pushNamed(
+                    //   routeName: "/SelectScannerStylePage",
+                    // );
+                    Navigator.push(context, CupertinoPageRoute(builder: (context){
+                      return SelectScannerStylePage();//状态变更
+                    }));
+                  },
+                  textColor: Colors.white,
+                  color: Colors.blue,
+                  child: const Text("Scan 1D barcode/QR code"),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MaterialButton(
+                  onPressed: () {
+                    //跳转页面=生成二维码
+                    // Airoute.pushNamed(
+                    //   routeName: "/CreatorPage",
+                    // );
+
+                    Navigator.push(context, CupertinoPageRoute(builder: (context){
+                      return CreatorPage();//状态变更
+                    }));
+                  },
+                  textColor: Colors.white,
+                  color: Colors.blue,
+                  child: const Text("Create QR code"),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
+
+
