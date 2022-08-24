@@ -27,3 +27,31 @@ class APIs {
 //   APIType.Login: "/login",
 //   APIType.GetPage: "/getPageArrDic"
 // };
+
+
+class PrintManager {
+
+  Completer<String> _completer;
+
+  static PrintManager manager;
+
+  static initData() {
+    manager ??= PrintManager();
+  }
+
+  //打印任务
+  Future<String> printe(sendMessage) async {
+    _completer = Completer<String>();
+    sendMessage();
+    print('在等待中');
+    return _completer.future;
+  }
+
+  //回调
+  static void callBack() {
+    if (manager._completer?.isCompleted == false) {
+      print('啊 我回调了, 可以执行下一个了');
+      manager._completer.complete('完成');
+    }
+  }
+}

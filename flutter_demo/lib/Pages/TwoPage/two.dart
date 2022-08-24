@@ -3,6 +3,10 @@ import 'package:basewidget/BaseTool.dart';
 import 'package:get/get.dart';
 
 import 'Setting/setting_page/view.dart';
+
+
+
+
 class twoWidget extends BaseStateless {
 
 

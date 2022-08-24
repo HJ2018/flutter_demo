@@ -13,7 +13,6 @@ Widget settingListView(SettingPageLogic logic,callBackName){
 }
 
 
-
 List<Widget> listChild(callBackName,logic){
 
   logic.state.cellMap.forEach((key, value) {
